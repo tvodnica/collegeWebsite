@@ -1,0 +1,75 @@
+
+#body-header {
+  text-align: center;
+  border-bottom: 5px solid orange;
+  margin: 50px 250px 50px 250px;
+  font-size: 25px;
+}
+
+#body-content {
+  height: 50vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  max-width: 80vw;
+  margin: auto;
+}
+
+#trazilica {
+  font-weight: bold;
+  text-align: left;
+  width: 100%;
+}
+#trazilica-kolegiji {
+  width: 90%;
+  padding: 5px 0 5px 5px;
+}
+
+h4 {
+  margin-top: 10px;
+}
+
+#rezultati {
+  width: 100%;
+  height: fit-content;
+  padding: 10px;
+  text-align: left;
+}
+
+#rezultati-tablica tr th {
+  background-color: rgb(230, 230, 230);
+  border-top: 1px solid rgb(119, 119, 119);
+}
+
+#rezultati-tablica tr th,
+#rezultati-tablica tr td {
+  padding: 5px 10px 5px 10px;
+}
+
+.tipka-obrisi{
+  background-color: #f00;
+  color: white;
+  font-weight: bold;
+  text-shadow: 1px 1px 1px solid black;
+  cursor: pointer;
+  padding: 10px;
+}
+
+#tipka-obrisi:hover{
+  background-color: rgb(255, 100, 52);
+  
+}
+
+
+@media only screen and (max-width: 768px) {
+  #body-header {
+    margin: 50px 0 50px 0;
+    font-size: 25px;
+  }
+
+  #body-content {
+    flex-direction: column;
+    max-width: 85vw;
+    margin: auto;
+  }
+}

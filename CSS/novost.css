@@ -1,0 +1,134 @@
+h1 {
+  font-size: 40px;
+}
+
+.pozadinska-slika {
+  height: 300px;
+  width: 100%;
+  overflow: hidden;
+  background-repeat: no-repeat;
+  background-position: center 0px;
+  background-size: cover;
+  animation: naslovna-slika-animacija 1s;
+}
+
+#pozadinska-slika-novost1 {
+  background-image: url(../MATERIJALI/img/novost1.jpg);
+}
+
+#pozadinska-slika-novost2 {
+  background-image: url(../MATERIJALI/img/novost2.jpg);
+}
+
+#pozadinska-slika-novost3 {
+  background-image: url(../MATERIJALI/img/novost3.jpg);
+}
+
+#bodyHeader {
+  text-align: center;
+  border-bottom: 5px solid orange;
+  margin: 50px 400px 50px 400px;
+  animation: body-header-animacija 1s;
+}
+
+#content-body {
+  max-width: 60vw;
+  margin: auto;
+}
+
+#content-body p {
+  text-align: justify;
+  line-height: 1.5;
+  margin-bottom: 50px;
+}
+
+#slike {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  max-width: 100%;
+  margin-bottom: 25px;
+}
+#slika1 {
+  margin-right: 10px;
+}
+
+#slika2 {
+  margin-left: 10px;
+}
+
+#slika1, #slika2{
+  overflow: hidden;
+
+}
+
+
+
+#slike img {
+  width: 100%;
+  
+}
+
+#slike img:hover{
+ animation: slike-galerija-animacija 0.7s;
+ transform: scale(1.25);
+}
+
+#video {
+  max-width: 70vw;
+  margin: auto;
+  padding-bottom: 100px;
+}
+
+video {
+  width: 100%;
+}
+
+@keyframes body-header-animacija{
+  0%{margin-top: 250px;}
+}
+
+@keyframes naslovna-slika-animacija{
+  0%{margin-top: -100px;}
+}
+
+@keyframes slike-galerija-animacija{
+  0%{transform: scale(1);}
+  100%{transform: scale(1.25);}
+}
+
+@media only screen and (max-width: 1500px) {
+  #bodyHeader {
+    margin: 50px 200px 50px 200px;
+  }
+}
+@media only screen and (max-width: 1200px) {
+  #bodyHeader {
+    margin: 50px 100px 50px 100px;
+  }
+}
+@media only screen and (max-width: 920px) {
+  #content-body {
+    max-width: 80vw;
+    margin: auto;
+  }
+}
+@media only screen and (max-width: 768px) {
+  #slike {
+    flex-direction: column;
+  }
+  #slika1,
+  #slika2 {
+    margin: 5px 0 5px 0;
+  }
+  #bodyHeader{
+    margin-left: 25px;
+    margin-right: 25px;
+  }
+  #video{
+    max-width: 100%;
+  }
+  #content-body{
+    max-width: 80vw;
+  }
+}

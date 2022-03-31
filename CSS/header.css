@@ -1,0 +1,116 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+#header-normal {
+  background-color: black;
+  color: white;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  height: 75px;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  z-index: 9999;
+}
+
+#header-normal #logo {
+    height: 50px;
+    padding-left: 50px;
+  }
+
+  #header-normal ul li {
+  display: inline;
+  padding: 0 20px 0 20px;
+}
+
+#header-normal ul li a {
+  color: white;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+#header-normal ul li a:hover {
+  color: yellow;
+}
+
+#margina-za-header {
+  height: 75px;
+}
+
+/*----------------------MOBITEL-------------------------*/
+
+#header-mobile {
+  background-color: black;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  visibility: hidden;
+}
+
+#header-mobile #row {
+  height: 75px;
+  display: flex;
+  flex-direction: row;
+  align-content: center;
+  align-items: center;
+  justify-content: space-around;
+  width: 100%;
+}
+
+#header-mobile #logo-mobile{
+    height: 50px;
+}
+
+#header-mobile #navigacija img {
+  height: 40px;
+  cursor: pointer;
+}
+
+#header-mobile #navigacija-lista{
+    width: 100%;
+    margin: auto;
+}
+
+#header-mobile ul {
+    border-top: 1px solid white;
+    width: 100%;
+    padding: 0;
+  }
+
+#header-mobile ul li {
+  display: block;
+  padding: 10px 0 10px 0;
+  text-align: center;
+ 
+
+}
+
+#header-mobile ul li a {
+    font-size: 25px;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+  }
+
+
+ 
+
+@media only screen and (max-width: 768px) {
+  #header-normal {
+    visibility: hidden;
+  }
+  #header-mobile {
+    visibility: visible;
+  }
+  #margina-za-header{
+    height: 75px;
+  }
+ 
+}

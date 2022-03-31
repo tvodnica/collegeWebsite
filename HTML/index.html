@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Projektni zadatak</title>
+    <link rel="stylesheet" href="../CSS/header.css" />
+    <link rel="stylesheet" href="..//CSS/pocetna.css" />
+    <link rel="stylesheet" href="..//CSS/kontakt.css" />
+    <link
+      rel="stylesheet"
+      href="..//JS/jquery-ui-1.11.4.custom/jquery-ui.css"
+    />
+
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="../JS/jquery-ui-1.11.4.custom/external/jquery/jquery.js"></script>
+    <script src="../JS/jquery-ui-1.11.4.custom/jquery-ui.js"></script>
+    <script src="../JS/kontakt.js"></script>
+    <script src="../JS/header.js"></script>
+    <script src="../JS/pocetna.js"></script>
+    <script src="../JS/Terminal-style-Text-Typing-Plugin-jQuery-Typewriter/jquery.typewriter.js"></script>
+    <script src="../JS/typewriterjs-master/dist/core.js"></script>
+  </head>
+
+  <header>
+    <div id="header-normal">
+      <a href="index.html"
+        ><img
+          id="logo"
+          src="../MATERIJALI/img/Algebra-logo.png"
+          alt="Algebra logo"
+      /></a>
+      <ul>
+        <li>
+          <a href="index.html">Početna</a>
+        </li>
+        <li>
+          <a href="o-nama.html">O nama</a>
+        </li>
+        <li>
+          <a href="novosti.html">Novosti</a>
+        </li>
+        <li>
+          <a href="nastavni-plan.html">Nastavni plan</a>
+        </li>
+        <li>
+          <a href="#kontakt" class="kontakt">Kontakt</a>
+        </li>
+      </ul>
+    </div>
+    <div id="header-mobile">
+      <div id="row">
+        <div id="logo-mobile">
+          <a href="index.html"
+            ><img
+              id="logo-mobile"
+              src="../MATERIJALI/img/Algebra-logo.png"
+              alt="Algebra logo"
+            />
+          </a>
+        </div>
+        <div id="navigacija">
+          <img src="../MATERIJALI/img/hamby.png" alt="" />
+        </div>
+      </div>
+      <div id="navigacija-lista">
+        <ul>
+          <li>
+            <a href="index.html">Početna</a>
+          </li>
+          <li>
+            <a href="o-nama.html">O nama</a>
+          </li>
+          <li>
+            <a href="novosti.html">Novosti</a>
+          </li>
+          <li>
+            <a href="nastavni-plan.html">Nastavni plan</a>
+          </li>
+          <li>
+            <a href="#kontakt" class="kontakt">Kontakt</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </header>
+
+  <body>
+    <div id="margina-za-header"></div>
+
+    <div id="video">
+      <video src="../MATERIJALI/video/typingOnlaptop.mp4" autoplay loop></video>
+    </div>
+
+    <div id="typewriter"></div>
+
+    <div id="kontakt-forma">
+      <h2>Kontaktirajte nas</h2>
+      <form action="http://www.fulek.com/VUA/SUPIT/ContactUs" method="post">
+        <div id="lijevo">
+          <div class="kontakt-element">
+            <label>
+              <div class="label1">Puno ime</div>
+              <div class="label2">
+                <input type="text" name="name" id="kontakt-ime" required />
+              </div>
+            </label>
+          </div>
+
+          <div class="kontakt-element">
+            <label>
+              <div class="label1">E-mail</div>
+              <div class="label2">
+                <input type="email" name="email" id="kontakt-email" required />
+              </div>
+            </label>
+          </div>
+
+          <div class="kontakt-element">
+            <label>
+              <div class="label1">Važnost poruke</div>
+              <div class="label2">
+                <select name="importance" id="kontakt-vaznost">
+                  <option value="visoka">Visoka</option>
+                  <option value="niska">Niska</option>
+                </select>
+              </div>
+            </label>
+          </div>
+
+          <div class="kontakt-element">
+            <label>
+              <div class="label1">Primaj newsletter:</div>
+              <div class="label2">
+                <input
+                  type="checkbox"
+                  name="newsletter"
+                  id="kontakt-newsletter"
+                /></div
+            ></label>
+          </div>
+        </div>
+
+        <div id="desno">
+          <div class="kontakt-element">
+            <label>
+              <div class="label1">Vaša poruka</div>
+              <div class="label2">
+                <textarea name="message" id="" cols="30" rows="10" required></textarea>
+              </div>
+            </label>
+          </div>
+        </div>
+
+        <input type="submit" id="posalji" style="display: none" />
+      </form>
+    </div>
+  </body>
+</html>

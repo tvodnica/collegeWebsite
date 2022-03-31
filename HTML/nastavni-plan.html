@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Nastavni plan</title>
+    <link rel="stylesheet" href="../CSS/header.css" />
+    <link rel="stylesheet" href="../CSS/footer.css" />
+    <link rel="stylesheet" href="..//CSS/kontakt.css" />
+    <link rel="stylesheet" href="../CSS/nastavni-plan.css" />
+    <link
+      rel="stylesheet"
+      href="..//JS/jquery-ui-1.11.4.custom/jquery-ui.css"
+    />
+
+    <script src="../JS/jquery-ui-1.11.4.custom/external/jquery/jquery.js"></script>
+    <script src="../JS/jquery-ui-1.11.4.custom/jquery-ui.js"></script>
+    <script src="../JS/header.js"></script>
+    <script src="../JS/kontakt.js"></script>
+    <script src="../JS/nastavni-plan.js"></script>
+  </head>
+  <header>
+    <div id="header-normal">
+      <a href="index.html"
+        ><img
+          id="logo"
+          src="../MATERIJALI/img/Algebra-logo.png"
+          alt="Algebra logo"
+      /></a>
+      <ul>
+        <li>
+          <a href="index.html">Početna</a>
+        </li>
+        <li>
+          <a href="o-nama.html">O nama</a>
+        </li>
+        <li>
+          <a href="novosti.html">Novosti</a>
+        </li>
+        <li>
+          <a href="nastavni-plan.html">Nastavni plan</a>
+        </li>
+        <li>
+          <a href="#kontakt" class="kontakt">Kontakt</a>
+        </li>
+      </ul>
+    </div>
+    <div id="header-mobile">
+      <div id="row">
+        <div id="logo-mobile">
+          <a href="index.html"
+            ><img
+              id="logo-mobile"
+              src="../MATERIJALI/img/Algebra-logo.png"
+              alt="Algebra logo"
+            />
+          </a>
+        </div>
+        <div id="navigacija">
+          <img src="../MATERIJALI/img/hamby.png" alt="" />
+        </div>
+      </div>
+      <div id="navigacija-lista">
+        <ul>
+          <li>
+            <a href="index.html">Početna</a>
+          </li>
+          <li>
+            <a href="o-nama.html">O nama</a>
+          </li>
+          <li>
+            <a href="novosti.html">Novosti</a>
+          </li>
+          <li>
+            <a href="nastavni-plan.html">Nastavni plan</a>
+          </li>
+          <li>
+            <a href="#kontakt" class="kontakt">Kontakt</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </header>
+  <body>
+    <div id="margina-za-header"></div>
+    <div id="body-header"><h2>Nastavni plan</h2></div>
+    <div id="body-content">
+      <div id="trazilica">
+        <h4>Naziv kolegija:</h4>
+        <input type="text" name="" id="trazilica-kolegiji" />
+      </div>
+      <div id="rezultati">
+        <table id="rezultati-tablica">
+          <tr>
+            <th>Kolegij</th>
+            <th>ECTS</th>
+            <th>Sati</th>
+            <th>P</th>
+            <th>V</th>
+            <th>Tip</th>
+            <th></th>
+          </tr>
+          <tr id="idea">
+            <td id="tablica-kolegij">{id}</td>
+            <td id="tablica-ects"></td>
+            <td id="tablica-sati"></td>
+            <td id="tablica-p"></td>
+            <td id="tablica-v"></td>
+            <td id="tablica-tip"></td>
+            <td id="tablica-tipka">
+              <input type="button" class="tipka-obrisi" value="OBRIŠI" />
+            </td>
+          </tr>
+
+          <tr id="tablica-footer">
+            <td>UKUPNO:</td>
+            <td id="ukupno-ects"></td>
+            <td id="ukupno-sati"></td>
+            <td id="ukupno-p"></td>
+            <td id="ukupno-v"></td>
+            <td id="ukupno-tip"></td>
+          </tr>
+        </table>
+      </div>
+    </div>
+    <div id="kontakt-forma">
+      <h2>Kontaktirajte nas</h2>
+      <form action="http://www.fulek.com/VUA/SUPIT/ContactUs" method="post">
+        <div id="lijevo">
+          <div class="kontakt-element">
+            <label>
+              <div class="label1">Puno ime</div>
+              <div class="label2">
+                <input type="text" name="name" id="kontakt-ime" required />
+              </div>
+            </label>
+          </div>
+
+          <div class="kontakt-element">
+            <label>
+              <div class="label1">E-mail</div>
+              <div class="label2">
+                <input type="email" name="email" id="kontakt-email" required />
+              </div>
+            </label>
+          </div>
+
+          <div class="kontakt-element">
+            <label>
+              <div class="label1">Važnost poruke</div>
+              <div class="label2">
+                <select name="importance" id="kontakt-vaznost">
+                  <option value="visoka">Visoka</option>
+                  <option value="niska">Niska</option>
+                </select>
+              </div>
+            </label>
+          </div>
+
+          <div class="kontakt-element">
+            <label>
+              <div class="label1">Primaj newsletter:</div>
+              <div class="label2">
+                <input
+                  type="checkbox"
+                  name="newsletter"
+                  id="kontakt-newsletter"
+                /></div
+            ></label>
+          </div>
+        </div>
+
+        <div id="desno">
+          <div class="kontakt-element">
+            <label>
+              <div class="label1">Vaša poruka</div>
+              <div class="label2">
+                <textarea
+                  name="message"
+                  id=""
+                  cols="30"
+                  rows="10"
+                  required
+                ></textarea>
+              </div>
+            </label>
+          </div>
+        </div>
+
+        <input type="submit" id="posalji" style="display: none" />
+      </form>
+    </div>
+  </body>
+  <footer>
+    <h3 id="footer-text">Budi izvrstan u onome što voliš</h3>
+    <h3 id="zaiskri">Zaiskri</h3>
+  </footer>
+</html>

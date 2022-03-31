@@ -1,0 +1,329 @@
+/*----------HEADER-----------------*/
+
+
+ #header-normal #sidra-header {
+  position: absolute;
+  right: 10px;
+  animation: sidra-header-animacija 1s;
+}
+
+#header-normal #sidra-header li {
+  display: inline;
+  padding: 10px;
+}
+
+#header-normal #sidra-header li a {
+color: yellow;
+font-size: 14px;
+}
+
+#header-mobile #sidra-header {
+display: flex;
+flex-direction: row;
+justify-content: space-evenly;
+align-items: center;
+margin: auto;
+}
+
+#header-mobile #sidra-header li a {
+color: yellow;
+font-size: 15px;
+}
+
+.sidro{
+  scroll-margin-top: 100px;
+}
+
+/*-----------------OSTALO---------------------*/
+
+html{
+  scroll-behavior: smooth;
+}
+
+#pozadinska-slika {
+  height: 300px;
+  width: 100%;
+  overflow: hidden;
+  background-image: url(../MATERIJALI/img/kampus-iz-zraka-min-1.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  animation: naslovna-slika-animacija 1s;
+}
+
+#bodyHeader {
+  text-align: center;
+  border-bottom: 5px solid orange;
+  margin: 50px 400px 50px 400px;
+  animation: body-header-animacija 1s;
+}
+
+#vrijednosti {
+  width: 100%;
+  margin: auto;
+}
+
+body h2 {
+  text-align: center;
+}
+
+.tekst-kao-citat {
+  background-color: #f0f0f0;
+  font-style: italic;
+  font-family: cursive;
+  padding: 50px 0 50px 0;
+}
+.tekst-kao-citat p {
+  text-align: left;
+  max-width: 1000px;
+  margin: auto;
+  animation: citati-animacija 5s;
+
+}
+#tri-kvadrata {
+  display: flex;
+  flex-direction: row;
+}
+
+#tri-kvadrata,
+#povijest-kvadrati,
+#algebra-grupa-kvadrati {
+  margin: 30px 400px 100px 400px;
+}
+
+.kvadrat p {
+  text-align: justify;
+}
+.kvadrat {
+  padding: 15px;
+  margin: 0 10px 0 10px;
+  border: 1px solid gray;
+}
+
+.kvadrat h2 {
+  text-align: center;
+  border-bottom: 1px solid gray;
+  margin: 15px;
+  padding-bottom: 10px;
+}
+
+#povijest-kvadrati {
+  display: grid;
+  grid-template-columns: 33% 33% 33%;
+  row-gap: 20px;
+}
+#algebra-grupa-kvadrati {
+  display: grid;
+  grid-template-columns: 25% 25% 25% 25%;
+  row-gap: 20px;
+}
+
+#algebra-grupa-kvadrati .kvadrat {
+  border: 0;
+}
+#algebra-grupa-kvadrati .kvadrat h2 {
+  text-transform: uppercase;
+  font-size: 15px;
+  font-weight: bold;
+}
+
+.slika-kvadrat {
+  width: fit-content;
+  height: 50px;
+  margin: auto;
+}
+#algebra-grupa-kvadrati .kvadrat img {
+  width: auto;
+  height: 50px;
+  max-width: 200px;
+}
+#kako-do-nas-header {
+  margin-top: 75px;
+}
+
+#kako-do-nas-content {
+  width: 100%;
+  margin: auto;
+  background-image: url(img/kakoDoNas.jpg);
+  background-repeat: repeat;
+}
+
+#kako-do-nas-kvadrati {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  max-width: 70vw;
+  margin: auto;
+}
+
+#kako-do-nas-kvadrati .kvadrat {
+  background-color: #fff;
+  width: 50%;
+  margin-top: 50px;
+}
+h3 {
+  text-align: left;
+  font-size: 20px;
+}
+
+#karta {
+  max-width: 60vw;
+  margin: auto;
+}
+#karta iframe {
+  width: 100%;
+  margin: 50px 0 50px 0;
+  justify-content: center;
+  border: 1px solid black;
+}
+
+@keyframes sidra-header-animacija{
+  0%{right:-200px}
+  100%{right: 10px;}
+}
+
+@keyframes body-header-animacija{
+  0%{margin-top: 250px;}
+}
+
+@keyframes naslovna-slika-animacija{
+  0%{margin-top: -100px;}
+}
+
+@keyframes citati-animacija{
+  0%{opacity: 0;}
+  70%{opacity: 0.9;}
+  100%{opacity: 1;}
+}
+
+
+@media only screen and (max-width: 1800px) {
+  #tri-kvadrata,
+  #povijest-kvadrati,
+  #algebra-grupa-kvadrati {
+    margin: 30px 200px 100px 200px;
+  }
+}
+@media only screen and (max-width: 1400px) {
+  #tri-kvadrata,
+  #povijest-kvadrati,
+  #algebra-grupa-kvadrati {
+    margin: 30px 100px 100px 100px;
+  }
+}
+@media only screen and (max-width: 1200px) {
+  #tri-kvadrata,
+  #povijest-kvadrati,
+  #algebra-grupa-kvadrati {
+    margin: 30px 50px 100px 50px;
+  }
+  #bodyHeader {
+   margin: 50px 200px 50px 200px;
+  }
+
+  #header-normal #sidra-header li{
+    padding: 0 5px 0 5px;
+  }
+
+  #header-normal ul li {
+    padding: 0 5px 0 0;
+  }
+
+ #header-normal #logo{
+   padding-left: 25px;
+ }
+
+  .tekst-kao-citat p {
+    margin: 0 25px 0 25px;
+  }
+
+  #kako-do-nas-kvadrati {
+    max-width: 90vw;
+  }
+}
+@media only screen and (max-width: 920px) {
+  #tri-kvadrata,
+  #povijest-kvadrati,
+  #algebra-grupa-kvadrati {
+    margin: 30px 15px 100px 15px;
+  }
+  #bodyHeader {
+    
+    margin: 50px 100px 50px 100px;
+  }
+
+  #header-normal ul{
+    padding: 15px;
+  }
+
+  #header-normal #sidra-header {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    max-width: 240px;
+    right: 0;
+  }}
+
+@media only screen and (max-width: 768px) {
+  #bodyHeader {
+    border-bottom: 5px solid orange;
+    margin: 50px 75px 50px 75px;
+  }
+
+  .sidro{
+    scroll-margin-top: 135px;
+  }
+
+  #pozadinska-slika {
+    height: 150px;
+  }
+
+  .tekst-kao-citat p {
+    max-width: 85vw;
+    margin: auto;
+  }
+
+  .tekst-kao-citat {
+    padding-left: 15px;
+    padding-right: 15px;
+    max-width: 100%;
+  }
+
+  #tri-kvadrata {
+    flex-direction: column;
+    margin-left: 15px;
+    margin-right: 15px;
+  }
+  #tri-kvadrata .kvadrat {
+    margin: 10px;
+  }
+
+  #povijest-kvadrati {
+    grid-template-columns: 100%;
+    margin: 25px 0 25px 0;
+  }
+  #algebra-grupa-kvadrati {
+    grid-template-columns: 50% 50%;
+    margin: auto;
+  }
+  #algebra-grupa-kvadrati .kvadrat {
+    margin: 10px;
+    padding: 0;
+  }
+
+  #algebra-grupa-kvadrati .kvadrat img {
+    max-width: 150px;
+  }
+
+  #kako-do-nas-kvadrati {
+    max-width: 100%;
+    flex-direction: column;
+    align-items: center;
+  }
+  #kako-do-nas-kvadrati .kvadrat {
+    width: 80%;
+  }
+
+  #karta {
+    max-width: 80%;
+  }
+}
